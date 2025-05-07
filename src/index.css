@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&family=Amiri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 30 6% 25%;
+
+    --card: 36 33% 97%;
+    --card-foreground: 30 6% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 42 44% 63%;
+    --primary-foreground: 30 6% 25%;
+
+    --secondary: 36 33% 90%;
+    --secondary-foreground: 30 6% 25%;
+
+    --muted: 36 33% 90%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 36 33% 90%;
+    --accent-foreground: 30 6% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 36 33% 83%;
+    --input: 36 33% 83%;
+    --ring: 42 44% 63%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-furniture-beige text-furniture-gray font-tajawal;
+  }
+
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+  
+  .ltr {
+    direction: ltr;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-furniture-gold to-furniture-darkGold text-white;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 md:py-20 md:px-8 lg:px-16;
+  }
+  
+  .animate-on-scroll {
+    @apply opacity-0;
+  }
+  
+  .animate-on-scroll.animated {
+    @apply animate-fade-in;
+  }
+}
