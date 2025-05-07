@@ -94,7 +94,7 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="section-padding bg-white py-20">
+    <section id="gallery" className="py-20 bg-furniture-beige-light animate-on-scroll">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-amiri text-3xl md:text-4xl mb-4 text-furniture-gray">
